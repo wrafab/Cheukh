@@ -1,3 +1,40 @@
 <html>
+  
+  <style>
+    h1 {font-family:arial;font-size:200%;text-align:center;}
+    h2 {font-family:arial;font-size:150%;text-align:center;}
+    p {font-family:arial;font-size:100%;}
+  </style>
+  
+  <h1> Week 9 </h2>
+  <h2> Arduino and electronics </h2>
+  <br>
+  
+  <p> This week, we learned all about Arduino. It is microcontroller platform that is easy to use for electronics projects. </p>
+  <p> It allows us to connect electronics through its pins so we can control things. </p>
+  <p> We finished every single project on the Sparkfun Inventors Kit Guide book, it took quite long but it is interesting to see how Arduino works. </p>
+  <p> We did projects like blink LED, photoresistor, buzzer, the game simon says, distance sensor, LCD display screen, motor and even an autonomous robot at last </p>
+  <br>
+  
+  <p> Then, I processed to play around with the code myself, like changing it and using different variables. </p>
+  <p> So here is one of the changed code: </p>
+  <p> #include <LiquidCrystal.h>         
+
+LiquidCrystal lcd(13, 12, 11, 10, 9, 8);
+
+void setup() {
+
+  lcd.begin(10, 4);
+  lcd.clear();
+}
+
+void loop() {
+
+  lcd.setCursor(0,0);
+  lcd.print("I FEEL ALIVE!!!");    
+
+  lcd.setCursor(0,3);
+  lcd.print(millis()/1500);
+    }  </p>
 
 </html>
