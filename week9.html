@@ -20,25 +20,26 @@
   
   <p> Then, I processed to play around with the code myself, like changing it and using different variables. </p>
   <p> So here is one of the changed code: </p>
-  <p> #include <LiquidCrystal.h>         
+  <p> #include <LiquidCrystal.h> </p>        
 
-LiquidCrystal lcd(13, 12, 11, 10, 9, 8);
+  <p> LiquidCrystal lcd(13, 12, 11, 10, 9, 8); </p>
 
-void setup() {
+  <p> void setup() { </p>
 
-  lcd.begin(10, 4);
-  lcd.clear();
-}
+  <p> lcd.begin(10, 4); </p>
+  <p> lcd.clear();   } </p>
+  <br>
 
-void loop() {
-
-  lcd.setCursor(0,0);
-  lcd.print("I FEEL ALIVE!!!");    
-
-  lcd.setCursor(0,3);
-  lcd.print(millis()/1500);
-    }  </p>
-    <br>
+  <p> void loop() { </p>
+  <br>
+  
+  <p> lcd.setCursor(0,0); </p>
+  <p> lcd.print("I FEEL ALIVE!!!"); </p>
+  <br>
+  
+  <p> lcd.setCursor(0,3); </p>
+  <p> lcd.print(millis()/1500);   } </p>
+  <br>
     
     <a href="index.html">Back to index</a>
     <br>
